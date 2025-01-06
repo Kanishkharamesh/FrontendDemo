@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.home-container {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding: 0 20px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-image {
+  width: 600px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about,
+.features,
+.cta,
+.testimonials {
+  margin: 20px 0;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  text-align: center;
+  margin: 10px;
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta {
+  text-align: center;
+}
+
+.cta-button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cta-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  text-align: center;
+}
+
+.testimonials cite {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 5px 0;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}

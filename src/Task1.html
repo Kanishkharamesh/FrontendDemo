@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 1 LIST REPRESENTATION</title>
+    <style>
+        .custom-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .custom-list > li {
+            margin: 10px 0;
+        }
+
+        .custom-list .bullet {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .custom-list .numbered {
+            list-style-type: lower-roman;
+            margin-left: 30px;
+        }
+
+        .custom-list .hash {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+
+        .custom-list .hash li::before {
+            content: "# ";
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>TASK 1 LIST REPRESENTATION</h1>
+    <ol class="custom-list">
+        <li>Fruits
+            <ul class="bullet">
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Banana</li>
+            </ul>
+        </li>
+        <li>Vegetables
+            <ol class="numbered">
+                <li>Carrot</li>
+                <li>Beans</li>
+                <li>Beetroot</li>
+            </ol>
+        </li>
+        <li>Birds
+            <ul class="hash">
+                <li>Peacock</li>
+                <li>Crow</li>
+                <li>Parrot</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>

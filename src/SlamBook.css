@@ -1,0 +1,166 @@
+/* Importing the Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.pexels.com/photos/1549280/pexels-photo-1549280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Universal selector to apply Poppins to all elements */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slam-container {
+    max-width: 900px;
+    margin: 50px auto;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 650px;
+}
+
+.slam-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.slam-header:before,
+.slam-header:after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #0072ff;
+    margin: 0 10px;
+}
+
+.slam-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #0072ff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.slam-form {
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-group {
+        width: 48%;
+    }
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.slam-input, .slam-textarea, .slam-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+.slam-input:focus, .slam-textarea:focus, .slam-select:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+.slam-textarea {
+    resize: none;
+    height: 60px;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.radio-group label, .checkbox-group label {
+    font-size: 14px;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.slam-button {
+    display: block;
+    width: 250px;
+    padding: 14px;
+    margin: 20px auto;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.slam-button:hover {
+    background: linear-gradient(135deg, #005ce6, #0041b3);
+}
+
+.slam-button:active {
+    background: #00338d;
+}
+
+.slam-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+.slam-select:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .slam-select {
+        font-size: 14px;
+    }
+}

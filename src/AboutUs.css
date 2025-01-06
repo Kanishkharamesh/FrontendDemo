@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.aboutus-container {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .mission-vision,
+  .history,
+  .team,
+  .values,
+  .awards,
+  .culture {
+    margin-bottom: 20px;
+  }
+  
+  .mission-vision h1,
+  .history h2,
+  .team h2,
+  .values h2,
+  .awards h2,
+  .culture h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .timeline li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+  }
+  
+  .timeline li:before {
+    content: "•";
+    color: black;
+    position: absolute;
+    left: 0;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .values ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .values ul li {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .awards p,
+  .culture p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
