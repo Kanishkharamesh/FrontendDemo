@@ -49,9 +49,9 @@ export default Apps; */
 
 import React from "react";
 import { BrowserRouter as Router , Routes , Route } from "react-router-dom";
-import Updateuser from "./Updateuser";
 import User from "./User";
 import Createuser from "./Createuser";
+import UpdateUser from "./UpdateUser";
 const Apps = () => {
     return (
         <div>
@@ -60,7 +60,7 @@ const Apps = () => {
                 <Routes>
                     <Route path="/" element={<User/>} />
                     <Route path="/create" element={<Createuser/>} />  
-                    <Route path="/update/:id" element={<Updateuser/>} />
+                    <Route path="/update/:id" element={<UpdateUser/>} />
                 
                 </Routes>
             </Router>    
