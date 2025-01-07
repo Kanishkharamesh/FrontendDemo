@@ -1,0 +1,159 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Basic layout and container */
+.create-user-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Title */
+.create-user-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form styling */
+.create-user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Field and input styling */
+.create-user-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-user-label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.create-user-input {
+  padding: 12px;
+  width: 475px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f4f7fc;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.create-user-input:focus {
+  border-color: #5c6bc0;
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* Button layout: Align the buttons in a row with space between them */
+.create-user-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Submit Button */
+.create-user-submit {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 48%;
+}
+
+.create-user-submit:hover {
+  background-color: #388e3c;
+}
+
+.create-user-submit:disabled {
+  background-color: #c8e6c9;
+  cursor: not-allowed;
+}
+
+/* Reset Button */
+.reset-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FF6F60;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 48%;
+}
+
+.reset-button:hover {
+  background-color: #f44336;
+}
+
+/* Error and Success messages */
+.error-message {
+  color: #FF6F60;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.success-message {
+  color: #4CAF50;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #5c6bc0;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .create-user-container {
+    padding: 20px;
+  }
+
+  .create-user-title {
+    font-size: 22px;
+  }
+
+  .create-user-input {
+    font-size: 14px;
+  }
+
+  .create-user-submit,
+  .reset-button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .create-user-buttons {
+    flex-direction: column;
+  }
+}
